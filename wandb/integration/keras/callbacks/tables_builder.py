@@ -1,8 +1,9 @@
-import wandb
-from typing import List, Dict
 import abc
+from typing import Dict, List
 
 from tensorflow.keras.callbacks import Callback
+
+import wandb
 
 
 class BaseWandbEvalCallback(Callback, metaclass=abc.ABCMeta):
